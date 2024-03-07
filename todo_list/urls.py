@@ -6,4 +6,4 @@ urlpatterns = [
     path("", IndexView.as_view(), name="index"),
 ]
 
-app_name = "todo-list"
+app_name = "todo_list"
