@@ -11,6 +11,12 @@ class Task(models.Model):
         blank=True
     )
 
+    def __str__(self) -> str:
+        return f"{self.content}"
+
 
 class Tag(models.Model):
     name = models.CharField(max_length=65, unique=True)
+
+    def __str__(self) -> str:
+        return f"{self.name}"
